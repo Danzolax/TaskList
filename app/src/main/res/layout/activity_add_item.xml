@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity"
+    android:orientation="vertical">
+
+    <EditText
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/titleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:textColor="@color/color_primary"
+        android:layout_marginTop="@dimen/spacing_normal_16"
+        android:layout_marginStart="@dimen/spacing_normal_16"
+        android:layout_marginEnd="@dimen/spacing_normal_16"
+        android:textColorHint="@color/color_gray_dark"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textSize="@dimen/font_large_24"
+        android:background="@android:color/transparent"/>
+
+
+    <EditText
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditText"
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_marginStart="@dimen/spacing_normal_16"
+        android:layout_marginTop="@dimen/spacing_normal_16"
+        android:layout_marginEnd="@dimen/spacing_normal_16"
+        android:background="@android:color/transparent"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+
+        android:textColor="@color/color_primary"
+
+        android:textColorHint="@color/color_gray_dark" />
+
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/spacing_normal_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal_16"
+        android:layout_marginStart="@dimen/spacing_normal_16"
+        android:text="@string/important"
+        android:textColor="@color/color_primary"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
